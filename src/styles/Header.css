@@ -1,6 +1,6 @@
 .header-container{
     margin-right: 5%;
-    display: inline-grid;
+    display: flex;
 }
 
 .result-count{

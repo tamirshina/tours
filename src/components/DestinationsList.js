@@ -1,5 +1,5 @@
 import React from 'react';
-import DestinationItem from './DestentionItem';
+import DestinationItem from './destinationItem/DestentionItem';
 
 function DestinationsList({ filteredResults }) {
 

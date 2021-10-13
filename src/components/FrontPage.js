@@ -1,7 +1,7 @@
 import React from 'react';
 import useFetch from '../utilities/useFetch';
 import Header from './Header';
-import Loader from './Loader';
+import Loader from './loader/Loader';
 import "../styles/FrontPage.css";
 import Destinations from './Destinations';
 
