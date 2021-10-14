@@ -1,10 +1,11 @@
 import React from 'react';
+import { SearchBar } from './SearchStyle';
 
 const Search = ({ searchTerm, searchItems }) => {
 
     return (
         <>
-            <input
+            <SearchBar
                 className='search-input'
                 type="text"
                 placeholder="חיפוש"

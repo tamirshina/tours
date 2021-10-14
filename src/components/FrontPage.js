@@ -1,15 +1,14 @@
 import React from 'react';
 import useFetch from '../utilities/useFetch';
-import Header from './Header';
+import Header from './header/Header';
 import Loader from './loader/Loader';
 import "../styles/FrontPage.css";
-import Destinations from './Destinations';
+import Destinations from './destinations/Destinations';
+import config from '../config';
 
 function FrontPage() {
 
-
-
-    const { data } = useFetch('https://api.eshet.com/LandingPage/GetPromotions?pathname=/organized')
+    const { data } = useFetch(config.api.baseUrl)
 
     return (
         <>

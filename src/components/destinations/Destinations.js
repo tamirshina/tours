@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import DestinationsList from './DestinationsList';
-import Search from './Search';
-import SearchCount from './searchCount';
-import "../styles/Header.css";
+import DestinationsList from '../DestinationsList';
+import Search from '../search/Search';
+import SearchCount from '../searchCount/searchCount';
+import { DestinationsContainer } from './DestinationsStyle';
 
 function Destinations({ data }) {
 
@@ -51,9 +51,9 @@ function Destinations({ data }) {
 
             {isShowCount() && <SearchCount resultCount={resultCount} dataLength={data.length} />}
 
-            <div className='destinations-container'>
+            <DestinationsContainer>
                 {destinationsList()}
-            </div>
+            </DestinationsContainer>
         </>
     );
 }
