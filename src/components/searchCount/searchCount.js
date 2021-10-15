@@ -2,11 +2,11 @@ import React from 'react';
 import textToUse from '../../assets/Text';
 import { ResultCount } from './SearchCountStyle';
 
-const SearchCount = ({ resultCount, datalength }) => {
+const SearchCount = ({ resultCount, dataLength }) => {
 
     return (
         <>
-            <ResultCount className='result-count'>{textToUse.out + ' ' + resultCount + ' ' + textToUse.show + ' ' + datalength} </ResultCount>
+            <ResultCount>{textToUse.out + ' ' + resultCount + ' ' + textToUse.show + ' ' + dataLength} </ResultCount>
         </>
     );
 }
