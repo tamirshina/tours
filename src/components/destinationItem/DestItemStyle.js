@@ -43,17 +43,14 @@ const DestinationImage = styled.img`
     width: 400px;
 
   @media screen and (max-width: 1900px) {
-      width: auto;
       max-width: 350px;
   }
 
   @media screen and (max-width: 1500px) {
-      width: auto;
       max-width: 250px;
   }
   
   @media screen and (max-width: 900px) {
-      width: auto;
       max-width: 250px;
       width: 190px;
       height: 130px;

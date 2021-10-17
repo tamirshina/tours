@@ -15,7 +15,7 @@ function Destinations({ data }) {
 
         setSearchTerm(searchValue);
 
-        if (searchTerm !== '') {
+        if (searchValue !== '') {
 
             const filteredData = data.filter((item) => {
                 return item.Title.toLowerCase().includes(searchValue.toLowerCase())
@@ -29,7 +29,7 @@ function Destinations({ data }) {
 
     const dataToUse = () => {
 
-        return searchTerm.length > 1 ? filteredResults : data;
+        return searchTerm.length > 0 ? filteredResults : data;
     }
 
 
